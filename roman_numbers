@@ -1,0 +1,25 @@
+def roman_sum(first_number: str, second_number: str):
+
+    roman_dict = {
+        "I": 1,
+        "II": 2,
+        "III": 3,
+        "IV": 4,
+        "V": 5,
+        "VI": 6,
+        "VII": 7,
+        "VIII": 8,
+        "IX": 9,
+        "X": 10
+    }
+
+    sum = int(roman_dict[first_number]) + int(roman_dict[second_number])
+
+    roman_numbers = (0, "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X")
+
+    if sum > 10:
+        result = roman_numbers[10] + roman_numbers[sum - 10]
+    else:
+        result = roman_numbers[sum]
+
+    return result
