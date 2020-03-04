@@ -1,17 +1,6 @@
 def roman_sum(first_number: str, second_number: str):
 
-    roman_dict = {
-        "I": 1,
-        "II": 2,
-        "III": 3,
-        "IV": 4,
-        "V": 5,
-        "VI": 6,
-        "VII": 7,
-        "VIII": 8,
-        "IX": 9,
-        "X": 10
-    }
+    roman_dict = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7, "VIII": 8, "IX": 9, "X": 10}
 
     sum = int(roman_dict[first_number]) + int(roman_dict[second_number])
 
